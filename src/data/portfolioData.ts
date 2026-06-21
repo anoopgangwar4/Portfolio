@@ -212,10 +212,15 @@ export const services = [
     description: 'Eye-catching banners, social media ads, and marketing materials for your brand.',
     icon: 'Image',
   },
-  {
-    title: 'Logo Design',
-    description: 'Professional logo design and branding identity that makes your business stand out.',
-    icon: 'PenTool',
+  // {
+  //   title: 'Logo Design',
+  //   description: 'Professional logo design and branding identity that makes your business stand out.',
+  //   icon: 'PenTool',
+  // },
+   {
+    title: 'Digital Marketing',
+    description: 'SEO, social media marketing, content strategy, Google Ads, and email campaigns to grow your business with online presence.',
+    icon: 'Megaphone',
   },
   {
     title: 'AI Integration',
