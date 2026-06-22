@@ -25,11 +25,14 @@ export default function Navbar() {
 
   const handleClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
     e.preventDefault();
+    e.stopPropagation();
     setIsOpen(false);
-    const element = document.querySelector(href);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
+    setTimeout(() => {
+      const element = document.querySelector(href);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }, 350);
   };
 
   return (
@@ -76,7 +79,7 @@ export default function Navbar() {
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.3 }}
-            className="md:hidden glass border-t border-slate-700/50"
+            className="md:hidden glass border-t border-slate-700/50 z-50 pointer-events-auto"
           >
             <div className="container-custom py-4 flex flex-col gap-2">
               {navLinks.map((link) => (
