@@ -86,8 +86,7 @@ export default function Hero() {
           transition={{ duration: 0.6 }}
         >
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-500/10 border border-brand-500/20 text-brand-300 text-sm font-medium mb-6">
-            <Sparkles className="w-4 h-4" />
-            <span>Available for Freelance</span>
+            
           </div>
         </motion.div>
 

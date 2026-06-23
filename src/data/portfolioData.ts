@@ -262,6 +262,5 @@ export const learning = [
 export const stats = [
   { label: 'Projects', value: 18, suffix: '+' },
   { label: 'Technologies', value: 15, suffix: '+' },
-  { label: 'Years Experience', value: 2, suffix: '+' },
-  { label: 'Happy Clients', value: 10, suffix: '+' },
+  { label: 'Years Hands on Experience', value: 2, suffix: '+' },
 ];
